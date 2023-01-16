@@ -1,43 +1,44 @@
 const dati=[
     {
-        nome:"Wayne Barnett  _   ",
-        role:"Founder e CEO   _  ",
+        nome:"Wayne Barnett",
+        role:"Founder e CEO",
         image:"wayne-barnett-fonder-ceo.jpg",
     },
     {
-        nome:"Angela Caroll_",
-        role:"Chief editor_",
+        nome:"Angela Caroll",
+        role:"Chief editor",
         image:"angela-caroll-chief-editor.jpg",
     },
     {
-        nome:"Walter Gordon_",
-        role:"Office Manager_",
+        nome:"Walter Gordon",
+        role:"Office Manager",
         image:"walter-gordon-office-manager.jpg",
     },
     {
-        nome:"Angela Lopez_",
-        role:"Social media manager_",
+        nome:"Angela Lopez",
+        role:"Social media manager",
         image:"angela-lopez-social-media-manager.jpg",
     },
     {
-        nome:"Scott Estrada_",
-        role:"Developer_",
+        nome:"Scott Estrada",
+        role:"Developer",
         image:"scott-estrada-developer.jpg",
     },
     {
-        nome:"Barbara Ramos_",
-        role:"Graphic Designer_",
+        nome:"Barbara Ramos",
+        role:"Graphic Designer",
         image:"barbara-ramos-graphic-designer.jpg",
     },
 ]
-const nuoviDati=document.getElementById("dati")
+const nuoviDati=document.getElementById("container")
 
 console.log(dati);
 for(let i=0;i<dati.length;i++){
     console.log(i + "DATI",dati[i]);
      
-    nuoviDati.innerHTML+=`<li>${dati[i].nome} ${dati[i].role}${dati[i].image}</li>`
-    
+    nuoviDati.innerHTML+=`<div class="mini-container">${dati[i].nome}</div>`
+    nuoviDati.innerHTML+=`<div class="mini-container">${dati[i].role}</div>`
+    nuoviDati.innerHTML+=`<div class="mini-container">${dati[i].image}</div>`
     
 }
 
