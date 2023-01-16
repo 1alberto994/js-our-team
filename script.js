@@ -30,4 +30,7 @@ const dati=[
         image:"barbara-ramos-graphic-designer.jpg",
     },
 ]
-console.log(dati)
+console.log(dati);
+for(let key in dati){
+    console.log(key + ":",dati[key]);
+}
